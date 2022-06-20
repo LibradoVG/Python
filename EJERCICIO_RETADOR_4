@@ -1,0 +1,14 @@
+idProducto = [1, 2, 3]
+TipoProducto = ["Maiz grano", "Pepino", "Tomate verde"]
+CostoCaja = [285.55, 334.72, 129.0]
+
+ObtenerCajas = input("Numero de cajas a vender: ")
+ObtenerID = input("ID del producto: ")
+Total = CostoCaja[int(ObtenerID)-1] * int(ObtenerCajas)
+if(int(ObtenerCajas) <=100):
+  Total = Total+ 1500
+else:
+  Total = Total
+print("El producto es: " + TipoProducto[int(ObtenerID)-1])
+print("El precio por caja es: " + str(CostoCaja[int(ObtenerID)-1]))
+print("El total a pagar es: "+ str(Total))
