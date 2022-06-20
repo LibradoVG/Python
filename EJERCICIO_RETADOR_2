@@ -1,0 +1,26 @@
+ListaMunicipios = []
+ListaHabitantes = []
+#INGRESAR MUNICIPIOS
+print("Ingrese el nombre de tres municipios")
+Municipio = input("Municipio 1: ")
+ListaMunicipios.append(Municipio)
+HabitantesMunicipio = input("Habitantes del municipio: ")
+ListaHabitantes.append(HabitantesMunicipio)
+
+Municipio = input("Municipio 2: ")
+ListaMunicipios.append(Municipio)
+HabitantesMunicipio = input("Habitantes del municipio: ")
+ListaHabitantes.append(HabitantesMunicipio)
+
+Municipio = input("Municipio 3: ")
+ListaMunicipios.append(Municipio)
+HabitantesMunicipio = input("Habitantes del municipio: ")
+ListaHabitantes.append(HabitantesMunicipio)
+
+print("")
+SumatoriaHabitantes = int(ListaHabitantes[0]) + int(ListaHabitantes[1]) + int(ListaHabitantes[2])
+
+PromedioHabitantes = SumatoriaHabitantes/3
+
+print("el total de habitantes es: " + str(SumatoriaHabitantes))
+print ("el promedio de habitantes es: " + str(PromedioHabitantes))
