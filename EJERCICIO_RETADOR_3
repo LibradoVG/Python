@@ -1,0 +1,10 @@
+PesoCemento = 40
+PesoYeso= 30
+
+CostalesCemento = input("Ingrese el numero de costales de cemento: ")
+CostalesYeso = input("Ingrese el numero de costales de yeso: ")
+Peso_Total = ((PesoCemento * int(CostalesCemento)) + (PesoYeso * int(CostalesYeso)))
+
+print ("El peso total en kg es: " + str(Peso_Total))
+RealizarEnvio = Peso_Total >= 3254/2 and        Peso_Total <=3254
+print("Se puede realizar el envio: " + str(RealizarEnvio))
